@@ -1,0 +1,15 @@
+image: alpine
+
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  only:
+    - master
+  tags:
+    - test
+  script:
+    - rm -rf ../build/*
+    - cp -r src/* vendor assets ../build/
+

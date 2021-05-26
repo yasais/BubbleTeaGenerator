@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'black_cliffsregular';
+  src: url('font/black-cliffs_regular-webfont.woff2') format('woff2'),
+       url('font/black-cliffs_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+body 
+{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #FFC3E0;
+}
+
+:root 
+{
+  --vert: #D0F1AE;
+  --rose: #FABCED;
+  --bleu: #88C4E9;
+  --violet: #B988E9;
+}
+  
+.carre 
+{
+  display: flex-inline;
+  justify-content: center;
+  align-items: center;
+}
+
+div > div
+{
+  width: 3vw;
+  height: 3vw;
+  border-radius: 20%;
+  margin: 1vw;
+  background-image: linear-gradient(145deg, rgba(100,255,255,0.5) 0%, rgba(0,0,0,0) 100%);
+  animation: bounce 1.5s 0.5s linear infinite;
+}
+
+/*carre vert*/
+.vert 
+{
+  background-color: var(--vert);
+  animation-delay: 0.1s;
+
+}
+
+/*carre rose*/
+.rose 
+{
+  background-color: var(--rose);
+  animation-delay: 0.2s;
+}
+
+/*carre bleu*/
+.bleu 
+{
+  background-color: var(--bleu);
+  animation-delay: 0.3s;
+}
+
+/*carre violet*/
+.violet 
+{
+  background-color: var(--violet);
+  animation-delay: 0.4s;
+}
+
+/*Animation sympathique*/
+@keyframes bounce 
+{
+  0%, 50%, 100% 
+  {
+    transform: scale(1);
+    filter: blur(0px);
+  }
+  40% 
+  {
+    transform: scale(0.6);
+    filter: blur(3px);
+  }
+  75% 
+  {
+    filter: blur(3px);
+    transform: scale(1.4);
+  }
+}
+
+
+
+/* p pour le mot "Préparation" */
+p
+{
+  font-size: 3em;
+  font-family: 'black_cliffsregular';
+  color: #88C4E9;
+  font-weight: bold;
+}
+
+/*pour le mot "votre"*/
+span.votre
+{
+  color: #B988E9;
+}
+
+/* pour le mot "Magnifique"*/
+span.magnifique
+{
+  color: #D0F1AE; 
+}
+
+/* BBT= BubbleTea*/
+span.BBT
+{
+  color: #d867a1; 
+}
+
+/* Texte d'excuse */
+#sorry
+{
+  font-family: 'black_cliffsregular';
+  font-weight: bold;
+  color: #162863;
+}
+
+/* bouton "cliquez>.<" */
+input
+{
+  font-family: 'black_cliffsregular';
+  font-weight: bold;
+  background-color: #FFFF;
+  border-color: #FBFBED;
+  border-radius: 50px;
+  color: #162863;
+}

@@ -1,0 +1,308 @@
+
+@font-face {
+    font-family: 'stay_classy_sldtregular';
+    src: url('font/stay_classy_sldt-webfont.woff2') format('woff2'),
+         url('font/stay_classy_sldt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'black_cliffsregular';
+    src: url('font/black-cliffs_regular-webfont.woff2') format('woff2'),
+         url('font/black-cliffs_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body
+{
+	background-color: #FFE7F3;
+}
+
+h5
+{
+	
+	
+	margin-left: 600px;
+	font-family: 'stay_classy_sldtregular';
+	font-size: 3em;
+	color: #B988E9;
+	filter: drop-shadow(5px 10px 4px #ABEBC6);
+}
+
+
+/*Debut des Elements du formulaire*/
+
+.formulaire
+{
+	
+	margin-left: 600px;
+    width: 500px;
+	height: 300px;
+    padding: 1em;
+    border: none;
+    border-radius: 1em;
+    background-color: none;
+    position: absolute;
+	top: 100px;
+    left: 1050px;
+    font-family: 'black_cliffsregular';
+    font-weight: bold;
+    color: #1B4F72;
+}
+
+.liste select 
+{
+  font-size: 30px;
+  background-color: #A29FE6;
+  font-family: 'black_cliffsregular';
+  color: white;
+  padding: 10px;
+  border: none;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.liste label
+{
+	font-size: 30px;
+}
+
+.goût
+{
+	margin-right: 100px;
+}
+
+.goût fieldset
+{
+	border-color: #A29FE6;
+	box-shadow: 12px 12px 2px 1px #ABEBC6;
+}
+
+fieldset
+{
+	font-size: 25px;
+	border-color: #A29FE6;
+	box-shadow: 12px 12px 2px 1px #A29FE6;
+}
+
+.perle
+{
+	margin-right: 100px;
+}
+
+
+.taille input
+{
+  width:40%;
+  height: 19px;
+  border: solid;
+  border-color: #A29FE6;
+  border-width: 1px;
+  border-radius: 50px;
+}
+
+.taille p 
+{
+	font-size: 25px;
+}
+
+.text input
+{
+	
+	font-size: 19px;
+	filter: drop-shadow(5px 10px 4px #ABEBC6);
+}
+
+.text label
+{
+	font-size: 25px;
+	
+}
+
+
+.GobeletCouleur
+{
+	font-size: 23px;
+	filter: drop-shadow(5px 5px 4px #A29FE6);
+}
+
+
+
+.billeDeTapioca
+{
+	font-size: 23px;
+	filter: drop-shadow(5px 5px 4px #A29FE6);
+}
+
+
+
+button
+{
+  font-family:'black_cliffsregular'; 
+  background-color: #FDEDEC;
+  border-radius: 50px;
+  border-color: pink;
+  color: #5A5893;
+  font-size: 2em;
+  font-weight: bold;
+  height: 50px;
+  filter: drop-shadow(5px 5px 4px #ABEBC6);
+}
+
+/*Fin des Elements du formulaire*/
+
+
+/*DEBUT IMAGE*/
+
+#marron
+{
+	position: absolute;
+	left: 800px;
+	top: 400px;	
+}
+
+#orange
+{
+	position: absolute;
+	left: 802px;
+	top: 396px;
+}
+
+#vert
+{
+	position: absolute;
+	left: 803px;
+	top: 383px;
+}
+
+#TapiocaBlanc
+{
+	position: absolute;
+	left: 845px;
+	top: 590px;
+}
+
+#TapiocaMarron
+{
+	position: absolute;
+	left: 832px;
+	top: 588px;
+}
+
+#TapiocaNoir
+{
+	position: absolute;
+	left: 841px;
+	top: 591px;
+}
+
+.billeDeTapioca
+{
+	padding-left: 200px;
+}
+
+.billeDeTapioca p
+{
+	padding-right: 40px;
+}
+
+.imagesLiquide
+{
+	width: 25em;
+	display: inline-block;
+	padding: 0px;
+	margin: 0px;
+}
+
+.imagesGobelet
+{
+	display: inline-block;
+	padding: 0px;
+	margin: 0px;
+}
+
+.imagesBoule
+{
+
+	display: inline-block;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*FIN DES IMAGES*/
+
+
+/*Tableau Menu*/
+
+tr,table,th {
+	margin-left: 300px;
+	margin-top: 650px;
+	border: 3px solid pink;
+}
+p{
+	margin: 0px;
+}
+
+/*Fin Tableau Menu*/
+
+/* Legende du tableau*/
+
+.texteLiquide 
+{
+	
+	display: inline;
+	padding: 0px;
+	margin: 0px;
+	font-family: 'black_cliffsregular';
+	font-weight: bold;
+	font-size: 25px;
+	writing-mode: vertical-rl;
+    text-orientation: upright;
+	color: #B988E9;
+	filter: drop-shadow(5px 10px 4px #ABEBC6);
+}
+
+.texteGobelet
+
+{
+	display: inline;
+	padding: 0px;
+	margin: 0px;
+	font-family: 'black_cliffsregular';
+	font-weight: bold;
+	font-size: 26px;
+	writing-mode: vertical-rl;
+    text-orientation: upright;
+	color: #B988E9;
+	filter: drop-shadow(5px 10px 4px #ABEBC6);
+}
+
+.texteBoule
+{
+	display: inline;
+	padding: 0px;
+	margin: 0px;
+	font-family: 'black_cliffsregular';
+	font-weight: bold;
+	font-size: 26px;
+	writing-mode: vertical-rl;
+    text-orientation: upright;
+	color: #B988E9;
+	filter: drop-shadow(5px 10px 4px #ABEBC6);
+}
+
+/*Fin des Legende du tableau*/
+
+
+
+
+
+
+
+
+
+

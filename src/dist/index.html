@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta charset="utf-8">
+	    <title>My Bubble Tea</title>
+	    <link rel="stylesheet" href="bubble.css">
+        <link rel="stylesheet" media="screen and (max-width: 1280px)" href="" />
+    </head>
+
+    <body>
+
+        <h5> BUBBLETEA &nbsp &nbsp GENERATOR</h5>
+
+        <!--Debut du formulaire-->
+
+        <div class="formulaire">
+	
+	        <form method="post" action="Page_attente.html">
+
+
+              <!--Liste des liquides-->  
+                    
+                    <div class="liste">
+                        <label for="mon_select" >Choisis ton liquide</label> <br>
+                        <select name="boisson">
+        	                <option value="Thé Fruité">Thé Fruité</option>
+        	                <option value="Lait Lactée">Lait Lacté</option>	
+                        </select>
+                    </div>
+
+              <br>
+
+               <!--Fieldset 1-->
+                <div class="goût">
+
+                    <fieldset>
+
+    	                <legend>Choisis ton sirop</legend>
+                
+    	                <input type="radio" id="Chocolat" name="goût" value="Chocolat" checked> 
+                        <label for="Chocolat">Chocolat</label>
+
+                        <input type="radio" id="Coco" name="goût" value="Coco" > 
+                        <label for="Coco">Coco</label>
+                     &nbsp
+                        <input type="radio" id="Fraise" name="goût" value="Fraise" > 
+                        <label for="Fraise">Fraise</label> 
+                     <br>
+                        <input type="radio" id="Myrtille" name="goût" value="Myrtille" > 
+                        <label for="Myrtille">Myrtille</label>
+
+                        <input type="radio" id="Vanille" name="goût" value="Vanille" > 
+                        <label for="Vanille">Vanille</label>
+
+                        <input type="radio" id="Pastèque" name="goût" value="Pastèque" > 
+                        <label for="Pastèque">Pastèque</label>
+                     <br>
+                        <input type="radio" id="Matcha" name="goût" value="Matcha" > 
+                        <label for="Matcha">Matcha</label>
+
+                        <input type="radio" id="Sesame" name="goût" value="Sesame" > 
+                        <label for="Sesame">Sesame</label>
+
+                        <input type="radio" id="Taro" name="goût" value="Taro" > 
+                        <label for="Taro">Taro</label>
+                    </fieldset>  
+                </div>          
+
+                <br>
+
+                <!--Fieldset 2-->
+                <div class="perle">
+      
+    	            <fieldset>
+
+                        <legend>Choisis tes perles</legend>
+           
+                        <input type="radio" id="Tapioca" name="perles" value="Tapioca" checked> 
+                        <label for="Tapioca">Tapioca</label>
+                 
+                     
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--Petits espaces-->
+      
+                        <input type="radio" id="Mangue" name="perles" value="Mangue" > 
+                        <label for="Mangue">Mangue</label> 
+      
+                     <br>
+      
+                        <input type="radio" id="Kiwi" name="perles" value="Kiwi" > 
+                        <label for="Kiwi">Kiwi</label>
+      
+                     
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               
+                        <input type="radio" id="Litchi" name="perles" value="Litchi" > 
+                        <label for="Litchi">Litchi</label> 
+                
+                     <br>
+      
+                       <input type="radio" id="Cerise" name="perles" value="Cerise" > 
+                       <label for="Cerise">Cerise</label>
+
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+                       <input type="radio" id="Melon" name="perles" value="Melon" > 
+                       <label for="Melon">Melon</label>
+       
+                    </fieldset>
+                </div>
+
+                <br> <br>
+
+        
+                <!--Taille du BubbleTea-->
+                
+
+                <div class="taille">
+                    <p>&nbsp&nbsp Chosis ta taille:</p>
+
+                    <input type="range" min="0" max="10" value="0" step="5" > <br>
+                    <FONT size=5em>Small</FONT> &nbsp;
+                    <FONT size=6em>Medium</FONT> &nbsp;
+                    <FONT size=8em>Tall</FONT> 
+                </div>
+
+                <br>
+
+                <!--Entrer un nom pour le BubbleTea-->
+                <div class="text"> 
+                   <label>Entre le nom de ton BubbleTea :</label> <br>
+                   <input type="text" size="20" style="height:35px;" placeholder="Ex: Le BubbleFrapadingue!" required />
+                </div> 
+
+
+                <br>
+
+                <!-- Debut de la partie où l'on appelle le JavaScript du bas. Lorsque l'on clique sur la phrase, cela fait apparaître l'image.-->
+                <div class="GobeletCouleur">
+
+                    <p>Clique sur la couleur de gobelet que tu veux: </p>
+
+                    <div id="gobelet" onclick="javascript:viewGobelet('marron');"> &#x2933; Afficher le gobelet marron </div>
+        
+                    <div id="gobelet2" onclick="javascript:viewGobelet2('orange');"> &#x2933; Afficher le gobelet orange </div>
+        
+                    <div id="gobelet3" onclick="javascript:viewGobelet3('vert');"> &#x2933; Afficher le gobelet vert </div>
+                </div>
+
+                <br>
+
+                <div class="billeDeTapioca">
+
+        	        <p>Clique sur la couleur de Bubble que tu veux: </p>
+
+        	        <div id="Tapioca1" onclick="javascript:Tapioca1('TapiocaBlanc');"> &#x2933; Afficher les tapiocas blanc </div>
+
+        	        <div id="Tapioca2" onclick="javascript:Tapioca2('TapiocaMarron');"> &#x2933; Afficher les tapiocas marron </div>
+
+        	        <div id="Tapioca3" onclick="javascript:Tapioca3('TapiocaNoir');"> &#x2933; Afficher les tapiocas noir </div>
+
+                </div>
+
+                <!--Fin de la partie où l'on appelle le JavaScript du bas-->
+
+                <br>
+                <!--En cliquant, cela vous ramene dans Page_attente.html-->
+                <button type="submit"> Validation du BubbleTea ♥ </button> 
+
+
+            </form>
+        </div>
+
+        <!--Debut du tableau-->
+        <div class="tab">
+            <table>
+                <tr>
+                    <th>
+                        <div class="texteLiquide">
+                            <p>LIQUIDE</p>     
+                        </div> 
+                        <div class="imagesLiquide">
+                            <p><img src="images/liquide.png" height="40%" width="40%" alt="photosDeLiquide"></p>
+                        </div>
+                    </th>
+
+            
+            
+                    <th> 
+                        <div class="texteGobelet">
+                            <p>GOBELET</p>     
+                        </div>
+                        <div class="imagesGobelet">
+                            <p><img src="images/gobelet_vierge.png" height="40%" width="40%" alt="photosDeJus"></p>
+                        </div>
+                    </th> 
+            
+        
+        
+                    <th>
+                        <div class="texteBoule">
+                            <p>BUBBLE</p>     
+                        </div>
+                        <div class="imagesBoule">
+                            <p><img src="images/boule_noir.png" height="40%" width="40%" alt="photosDeJus"></p>
+                        </div>         
+                    </th>   
+                </tr>
+ 
+            </table>
+        </div>
+        <!--Fin du tableau-->
+
+
+   
+
+        
+
+
+
+
+
+
+
+
+        <!--Debut de Toute la partie JavaScript-->
+
+        <div id="marron">
+        <script type="text/javascript">
+                var afficher=false; //permet de savoir si l'image est affichée ou pas
+             
+                function viewGobelet(id) 
+                {
+                    var contenuImage=!afficher ? "<img src='images/marron.png'>" : ""; //en fonction de afficher on met l'image ou non
+                    afficher=!afficher;
+                    var contenuBouton=afficher ? "Cacher le gobelet marron" : " &#x2933; Afficher le gobelet marron" ; //On met un texte qui s'affichera une fois cliquer
+                 
+                    document.getElementById(id).innerHTML=contenuImage;
+                    document.getElementById("gobelet").innerHTML=contenuBouton;
+                }
+        </script>
+
+        </div>
+
+
+
+        <script type="text/javascript">
+                var afficher=false; 
+             
+                function viewGobelet2(id)
+                {
+                    var contenuImage=!afficher ? "<img src='images/orange.png'>" : ""; 
+                    afficher=!afficher;
+                    var contenuBouton=afficher ? "Cacher le goblet orange" : " &#x2933; Afficher le gobelet orange" ; 
+                 
+                    document.getElementById(id).innerHTML=contenuImage;
+                    document.getElementById("gobelet2").innerHTML=contenuBouton;
+                }
+        </script>
+
+        <div id="orange"></div>   
+
+
+        <script type="text/javascript">
+                var afficher=false; 
+             
+                function viewGobelet3(id)
+                {
+                    var contenuImage=!afficher ? "<img src='images/vert.png'>" : ""; 
+                    afficher=!afficher;
+                    var contenuBouton=afficher ? "Cacher le gobelet vert" : " &#x2933; Afficher le gobelet vert" ; 
+                 
+                    document.getElementById(id).innerHTML=contenuImage;
+                    document.getElementById("gobelet3").innerHTML=contenuBouton;
+                }
+        </script>
+
+        <div id="vert"></div>   
+
+
+        <script type="text/javascript">
+                var afficher=false; 
+             
+                function Tapioca1(id) 
+                {
+                    var contenuImage=!afficher ? "<img src='images/tapioca_blanc.png'>" : ""; 
+                    afficher=!afficher;
+                    var contenuBouton=afficher ? "Cacher les tapiocas blanc" : " &#x2933; Afficher les tapiocas blanc" ; 
+                 
+                    document.getElementById(id).innerHTML=contenuImage;
+                    document.getElementById("Tapioca1").innerHTML=contenuBouton;
+                }
+        </script>
+
+        <div id="TapiocaBlanc"></div>
+
+
+
+        <script type="text/javascript">
+                var afficher=false; 
+             
+                function Tapioca2(id) 
+                {
+                    var contenuImage=!afficher ? "<img src='images/tapioca_marron.png'>" : ""; 
+                    afficher=!afficher;
+                    var contenuBouton=afficher ? "Cacher les tapiocas marron" : " &#x2933; Afficher les tapiocas marron" ; 
+                 
+                    document.getElementById(id).innerHTML=contenuImage;
+                    document.getElementById("Tapioca2").innerHTML=contenuBouton;
+                }
+        </script>
+
+        <div id="TapiocaMarron"></div> 
+
+
+
+        <script type="text/javascript">
+                var afficher=false; 
+             
+                function Tapioca3(id) 
+                {
+                    var contenuImage=!afficher ? "<img src='images/tapioca_noir.png'>" : ""; 
+                    afficher=!afficher;
+                    var contenuBouton=afficher ? "Cacher les tapiocas noir" : " &#x2933; Afficher les tapiocas noir" ; 
+                 
+                    document.getElementById(id).innerHTML=contenuImage;
+                    document.getElementById("Tapioca3").innerHTML=contenuBouton;
+                }
+        </script>
+
+        <div id="TapiocaNoir"></div> 
+
+        <!--Fin de Toute la partie JavaScript--> 
+
+
+
+
+    </body>
+</html>
+
+
+ 
+

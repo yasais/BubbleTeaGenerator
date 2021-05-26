@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>Waiting</title>
+	    <meta charset="utf-8">
+	    <link rel="stylesheet" href="Waiting.css">
+	    <script type="text/javascript"> 
+            function OnOff() 
+            {
+                if (document.getElementById("sorry").style.display == "block")
+                document.getElementById("sorry").style.display = "none";
+                else
+                document.getElementById("sorry").style.display = "block";
+            }
+        </script>
+    </head>
+
+    <body>
+    
+        <!--Votre magnifique JavaScript-->
+        <div id="app">
+            <script src="https://test.ublo.immo/main.js" type="module"></script>
+        </div>
+
+        <!--Carré d'attente-->
+        <div class="carre">
+	        <div class="vert"></div>
+	        <div class="rose"></div>
+	        <div class="bleu"></div>
+	        <div class="violet"></div>
+        </div>
+
+        <!--Texte d'attente-->
+        <span class="texte">
+	        <p>Préparation<br> 
+              <span class="votre">de votre</span><br>
+              <span class="magnifique">Magnifique<br></span>
+              <span class="BBT">BubbleTea</span>
+            </p>
+        </span>
+
+
+        <!--Texte qui apparaît en cliquant sur le bouton-->
+        <span id="sorry" style="display:none;">
+            Pardonnez-moi pour la commande...<br> Je veux bien rajouter du PHP <br> pour dire quel Bubble Tea vous avez commandé <br> avec le code
+            couleur mais je n'ai pas fini mon chapitre <br> OpenClassrooms... <br>
+            Ps: j'adore Wolfox je veux à tout prix rentrer dans <br> la meute pour enrichir ma connaissance au près de votre équipe de qualité!
+        </span>
+
+      <br>
+        <!--Appelle la fonction JavaScript écrite dans <head> -->
+        <input type="button" value="Cliquez...>.<" onclick="OnOff();">
+
+
+	
+
+    </body>
+</html>
